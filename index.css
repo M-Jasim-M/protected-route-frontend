@@ -1,0 +1,730 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,300&display=swap');
+
+
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+/* background-color: red; */
+}
+.main{
+}
+.navmain{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background: #324555;
+}
+.nleft{
+font-size: 30px;
+font-weight: 700;
+color: white;
+}
+.nright{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+.nright li{
+list-style: none;
+color: white;
+cursor: pointer;
+position: relative;
+}
+.nright li:hover{
+color: red;
+}
+.nright li:hover::before{
+position: absolute;
+content: "";
+width: 100%;
+height: 2px;
+top: 25px;
+background-color: black;
+animation: khan 0.5s linear;
+}
+@keyframes khan{
+    0%{
+width: 0%;
+    }
+    100%{
+        width: 100%; 
+    }
+}
+.nright button{
+    border-radius: 5px;
+    background: #0855BF;
+    border: none;
+    padding: 7px 18px 7px 18px;
+}
+.toogle{
+    display: none;
+}
+
+/* thsi is the css for the below section */
+.section1{
+display: flex;
+flex-wrap: wrap;
+background: #24394A;
+padding: 40px 100px 90px 100px; 
+}
+.oneleft{
+flex: 1;
+display: flex;
+flex-direction: column;
+gap: 30px;
+padding-top: 20px;
+}
+.oneleft div:nth-of-type(1){
+font-size: 50px;
+font-weight: bold;
+color: white;
+
+}
+.oneleft div:nth-of-type(2){
+font-size: 20px;
+font-weight: 600;
+color: white;
+}
+.oneright{
+flex: 1;
+display: flex;
+gap: 20px;
+}
+.oneright>*{
+    width: 30%;
+    height: 400px;
+}
+.oneright img:nth-of-type(2){
+    position: relative;
+    top: 80px;
+}
+.section2{
+display: flex;
+padding: 40px 100px 10px 100px;
+}
+.twoleft{
+    position: relative;
+flex: 1;
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 500px;
+}
+.twoleft img:nth-of-type(1),.twoleft img:nth-of-type(2),.twoleft img:nth-of-type(3){
+width: 48%;
+}
+.twoleft img:nth-of-type(4){
+    width: 30%;
+position: absolute;
+top: 30%;
+left: 30%;
+}
+
+.tworight{
+flex: 1;
+display: flex;
+gap: 10px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.tworight div:nth-child(1){
+    width: 57%;
+    color: #0855BF;
+    font-size: 30px;
+    font-weight: bold;
+}
+.tworight div:nth-child(2){
+    color: #252525;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* this is the css for the third section */
+
+.section3{
+display: flex;
+padding: 10px 100px 10px 100px;
+}
+.threeleft{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+flex: 1;
+}
+.three2{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.three2 div:nth-of-type(1){
+font-size: 30px;
+color: #0855BF;
+font-weight: 700;
+}
+
+.three2 div:nth-of-type(2){
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.threeright{
+flex: 1;
+position: relative;
+}
+.threeright div:nth-of-type(1){
+width: 150px;
+height: 400px;
+border: 1px solid black;
+position: absolute;
+z-index: -2;
+top: -10px;
+left: -20px;
+border-radius: 3px;
+}
+.threeright div:nth-of-type(2){
+    width: 400px;
+    height: 450px;
+}
+.threeright div:nth-of-type(2) img{
+    width: 100%;
+    height: 100%;
+}
+
+/* this is the css for the section 4 */
+
+.section4{
+display: flex;
+padding: 30px 100px 10px 100px;
+}
+
+.fourleft{
+flex: 1;
+}
+.fourleft>*{
+width: 30%;
+}
+.fourright{
+display: flex;
+flex-direction: column;
+gap: 15px;
+flex: 1;
+}
+.fourright div:nth-of-type(1){
+font-size: 30px;
+font-weight: bold;
+}
+.fourright div:nth-of-type(2){
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* this is the css for the five section form */
+
+.section5{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-top: 40px;
+}
+.fiveform{
+    width: 60%;
+    height: 500px;
+/* background-color: red; */
+padding-inline: 10px;
+}
+
+.fiveform div:nth-child(1){
+font-size: 24px;
+font-weight: bold;
+text-align: center;
+}
+label{
+    font-size: 16px;
+    font-weight: 500;
+}
+.fiveform input:nth-of-type(1){
+    width: 100%;
+    background: #F5F5F5;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    text-indent: 10px;
+}
+.formdis{
+    display: flex;
+    gap: 5px;
+    /* justify-content: center;
+    align-items: center; */
+}
+.formdis input{
+    background: #F5F5F5;
+    width: 100% !important;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    text-indent: 10px;
+}
+.formdis div:nth-of-type(1){
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: start;
+}
+.formdis div:nth-of-type(2){
+    flex: 1;
+}
+textarea{
+    width: 100%;
+    text-indent: 10px;
+   outline: none;
+   border: none;
+   background: #F5F5F5;
+}
+.fiveform div:nth-of-type(3){
+    display: flex;
+    gap: 10px;
+align-items: center;
+font-size: 14px;
+font-weight: 600;
+}
+.fiveform div:nth-of-type(3) input{
+    width: 14px;
+    height: 14px;
+}
+.fiveform div:nth-of-type(4){
+    display: flex;
+    padding-top: 10px;
+    gap: 10px;
+/* align-items: center; */
+font-size: 12px;
+font-weight: 500;
+}
+.fiveform div:nth-of-type(4) input{
+    width: 14px;
+    height: 14px;
+}
+#belowtext{
+    font-size: 12px;
+font-weight: 500;
+text-align: start;
+}
+.fiveform div:nth-of-type(5){
+    padding-top: 20px;
+    text-align: center;
+}
+.fiveform div:nth-of-type(5) button{
+    border-radius: 5px;
+    width: 30%;
+    height: 35px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+background: #0855BF;
+box-shadow: 6px 35px 68px -11px rgba(11, 31, 47, 0.10);
+}
+/* this si the css for the sixth section */
+.section6{
+    background: #24394A;
+height: 500px;
+margin: 30px 0px 0px 0px;
+position: relative;
+}
+.topdiv{
+display: flex;
+justify-content: space-around;
+align-items: center;
+width: 80%;
+height: 130px;
+border-radius: 10px;
+background: #FFF;
+margin: auto;
+position: absolute;
+top: -70px;
+    left: 10%;
+    box-shadow: 2px 2px 5px 4px #eae7e185;
+}
+.topleft{
+font-size: 20px;
+font-weight: 600;
+color: #0855BF;
+flex: 1;
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.topleft span{
+    color: #949494 !important;
+    font-weight: 500 !important;
+}
+
+.topright{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+flex: 1;
+}
+.topright input{
+    background: #F5F5F5;
+    gap: 10px;
+border: none;
+outline: none;
+width: 70%;
+height: 40px;
+border-radius: 8px;
+text-indent: 10px;
+}
+.topright button{
+border: none;
+padding: 9px 23px 9px 23px;
+border-radius: 5px;
+background: #0855BF;
+}
+.section6{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 40px;
+    padding: 100px 50px 10px 50px;
+    color: #FFF;
+}
+.bottomdiv{
+    display: flex;
+    /* justify-content:center; */
+    /* align-items: center; */
+    gap: 40px;
+    /* padding: 100px 50px 10px 50px; */
+}
+.sixone{
+    font-size: 25px !important;
+    font-weight: 600;
+    width: 300px;
+}
+.section6 hr{
+    width: 100%;
+}
+.sixtwo span:nth-of-type(1){
+    color: rebeccapurple !important;
+}
+.sixone,.sixtwo,.sixthree,.sixfour,.sixfive{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.copyright{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* this is media querry */
+
+@media(max-width:1060px){
+.nleft{
+    font-size: 24px;
+}
+.nright{
+    gap: 15px;
+    font-size: 14px;
+}
+
+    .oneleft{
+    gap: 15px;
+    /* padding-left: 60px; */
+    /* padding-bottom: 10px; */
+}
+.oneleft div:nth-of-type(1){
+    font-size: 24px;
+}
+.oneleft div:nth-of-type(2){
+    font-size: 18px;
+}
+.oneright{
+    gap: 5px;
+}
+.twoleft {
+    height: 351px;
+}
+/* this is the css for the third media querry */
+
+.threeright{
+
+}
+
+.three2 div:nth-of-type(1){
+    font-size: 22px;
+}
+.three2 div:nth-of-type(2){
+    font-size: 13px;
+}
+
+.fourleft >*{
+        height: 90px;
+}
+
+.fourright div:nth-of-type(2){
+    font-size: 13px;
+}
+#belowtext {
+    font-size: 10px;
+}
+
+}
+
+
+/* this is the media querry for the mobile screen */
+
+@media(max-width:768px){
+
+.navmain{
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+.nleft{
+    font-size: 22px;
+}
+    .nright{
+        padding-top: 20px;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50%;
+        height: 100vh;
+        background: #324555;
+        position: fixed;
+        top: 0px;
+        transition: 2s;
+        right: -50%;
+        z-index: 3;
+    }
+    .nright2{
+        padding-top: 20px;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50%;
+        height: 100vh;
+       background: #324555;
+        transition: 2s;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        z-index: 3;
+    }
+.toogle{
+    display: block;
+    font-size: 20px;
+    z-index: 5;
+}
+
+.section1{
+    padding: 20px 10px 105px 10px;
+    flex-direction: column;
+    gap: 30px;
+}
+.oneleft{
+    gap: 15px;
+    padding-left: 60px;
+    padding-bottom: 10px;
+}
+.oneleft div:nth-of-type(1){
+    font-size: 30px;
+}
+.oneleft div:nth-of-type(2){
+    font-size: 18px;
+}
+.oneright{
+    gap: 5px;
+}
+.oneright>*{
+    flex: 1;
+}
+.section2{
+    gap: 30px;
+    flex-direction: column;
+    padding: 20px 10px 10px 10px;
+}
+.twoleft{
+    height: 590px;
+}
+.twoleft img:nth-of-type(4){
+    /* position: absolute;
+    width: 140px;
+    top: 54px;
+    left: 85px; */
+}
+/* .twoleft img:nth-of-type(1),.twoleft img:nth-of-type(2),.twoleft img:nth-of-type(3){
+width: 41%;
+} */
+.tworight div:nth-of-type(1){
+    
+    font-size: 17px;
+}
+.tworight div:nth-of-type(2){
+    font-size: 14px;
+}
+
+/* this is the css for the third section */
+.section3{
+    flex-direction: column;
+    gap: 20px;
+}
+/* .threeright div:nth-of-type(2){
+    flex-basis: 100%;
+    display: flex;
+} */
+
+.section4{
+    flex-direction: column;
+}
+.fourright{
+    align-items: center;
+    justify-content: center;
+}
+.section5{
+    padding: 10px 10px 10px 10px;
+}
+.fiveform{
+    width: 100%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:435px){
+.navmain{
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+.nleft{
+    font-size: 22px;
+}
+    .nright{
+        padding-top: 20px;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50%;
+        height: 100vh;
+        background: #324555;
+        position: fixed;
+        top: 0px;
+        transition: 2s;
+        right: -50%;
+        z-index: 3;
+    }
+    .nright2{
+        padding-top: 20px;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50%;
+        height: 100vh;
+       background: #324555;
+        transition: 2s;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        z-index: 3;
+    }
+.toogle{
+    display: block;
+    font-size: 20px;
+    z-index: 5;
+}
+
+.section1{
+    padding: 20px 10px 105px 10px;
+    flex-direction: column;
+}
+.oneleft{
+    gap: 15px;
+    padding-left: 60px;
+    padding-bottom: 10px;
+}
+.oneleft div:nth-of-type(1){
+    font-size: 20px;
+}
+.oneleft div:nth-of-type(2){
+    font-size: 14px;
+}
+.oneright{
+    gap: 5px;
+}
+.oneright>*{
+    flex: 1;
+}
+/* this is the css for the section two */
+.section2{
+    gap: 30px;
+    flex-direction: column;
+    padding: 20px 10px 10px 10px;
+}
+.twoleft{
+    height: 400px;
+}
+.twoleft img:nth-of-type(4){
+    /* position: absolute;
+    width: 140px;
+    top: 54px;
+    left: 85px; */
+}
+.tworight div:nth-of-type(1){
+    
+    font-size: 17px;
+}
+.tworight div:nth-of-type(2){
+    font-size: 14px;
+}
+.section3{
+    padding: 20px 10px 10px 10px;
+}
+
+.section4{
+    padding: 30px 10px 10px 10px;
+}
+.fourright div:nth-of-type(1){
+font-size: 22px;
+}
+/* .fourright div:nth-of-type(2){
+    font-size: 12px;
+} */
+.section5{
+    padding: 10px 10px 10px 10px;
+}
+.fiveform{
+    width: 100%;
+}
+}
+
+
+
+
+
